@@ -7,15 +7,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="generator" content="pandoc">
     <meta name="description" content="">
-    $for(author-meta)$
+$for(author-meta)$
     <meta name="author" content="$author-meta$">
-    $endfor$
-    $if(date-meta)$
+$endfor$
+$if(date-meta)$
     <meta name="dcterms.date" content="$date-meta$">
-    $endif$
-    $if(keywords)$
+$endif$
+$if(keywords)$
     <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
-    $endif$
+$endif$
 
     <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
 
@@ -34,36 +34,36 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">code{white-space: pre;}</style>
-    $if(toc)$
+$if(toc)$
     <style type="text/css">.sidebar ul{padding-left: 10px;}</style>
-    $endif$
-    $if(quotes)$
+$endif$
+$if(quotes)$
     <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
-    $endif$
-    $if(highlighting-css)$
+$endif$
+$if(highlighting-css)$
     <style type="text/css">
-      $highlighting-css$
+$highlighting-css$
     </style>
-    $endif$
-    $for(css)$
+$endif$
+$for(css)$
     <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
-    $endfor$
-    $if(math)$
-      $math$
-    $endif$
-    $for(header-includes)$
-      $header-includes$
-    $endfor$
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
   </head>
 
   <body>
-    $for(include-before)$
-      $include-before$
-    $endfor$
+$for(include-before)$
+    $include-before$
+$endfor$
 
     <div class="container-fluid">
       <div class="row">
-        $if(toc)$
+$if(toc)$
         <div id="sidebar" class="col-sm-3 col-md-2 sidebar">
           <!--<ul class="nav nav-sidebar">
             <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
@@ -71,11 +71,11 @@
           $toc$
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        $else$
+$else$
         <div class="col-sm-12 main">
-        $endif$
+$endif$
         
-          $body$
+$body$
         </div>
       </div>
     </div>
@@ -98,8 +98,8 @@
         window.addEventListener("hashchange", shiftWindow);
         function load() { if (window.location.hash) shiftWindow(); }
     </script>
-    $for(include-after)$
-      $include-after$
-    $endfor$
+$for(include-after)$
+  $include-after$
+$endfor$
   </body>
 </html>
