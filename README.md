@@ -25,10 +25,10 @@ It has a navbar on the top of the page for website navigation, and a TOC (table 
   ```sh
   pandoc input.md --template toc-sidebar.html --toc -B nav -o outWithoutTOC.html
   ```
-  You can remove `-B nav` in the previous commands if you do not want a navbar.
-  However, for the time being, this will result in a not good looking layout :(
+  If you want to use local css and javascript files, just replace `toc-sidebar.html` with `toc-sidebarL.html` in the previous commands.  
+  If you do not want a navbar, you can remove `-B nav` option. However, for the time being, this will result in a not good looking layout :(
 
 ## Output example
-The following output examples are converted from [Pandoc's README file](https://github.com/jgm/pandoc/blob/master/README)
+The following output examples are converted from [Pandoc's README file](https://github.com/jgm/pandoc/blob/master/README) and is using `toc-sidebarL.html` template
 * with TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithTOC.html>
 * without TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithoutTOC.html>
