@@ -28,7 +28,11 @@ It has a navbar on the top of the page for website navigation, and a TOC (table 
   If you want to use local css and javascript files, just replace `toc-sidebar.html` with `toc-sidebarL.html` in the previous commands.  
   If you do not want a navbar, you can remove `-B nav` option. However, for the time being, this will result in a not good looking layout :(
 
-## Output example
+## Output examples
+### A Single page
 The following output examples are converted from [Pandoc's README file](https://github.com/jgm/pandoc/blob/master/README) and is using `toc-sidebarL.html` template
 * with TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithTOC.html>
 * without TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithoutTOC.html>
+
+### A website
+[My notes](http://twilightzone.gitlab.io/), the contents are mostly written in Chinese, you can find the markdown source files [here](https://github.com/Mushiyo/note).
