@@ -32,7 +32,7 @@ For local css and JavaScript files, just replace `toc-sidebar.html` with `toc-si
 
 #### `<table>` styles
 The `<table>` styles here are the following Bootstrap table classes: `.table`, `table-bordered` and `table-hover`.
-You can change the styles by modifying line 104 in `toc-sidebar.html` (or `toc-sidebarL.html` if local css and js files are used).
+You can change the styles by modifying line 104 in [toc-sidebar.html](toc-sidebar.html#L104) (or [toc-sidebarL.html](toc-sidebarL.html#L104) if local css and js files are used).
 For example, if you want `.table-striped`, just replace `table table-bordered table-hover` into `table table-striped`.
 Read [Bootstrap documentation](http://getbootstrap.com/css/#tables) for more Bootstrap table styles.
 
