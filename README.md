@@ -15,21 +15,32 @@ It has a navbar on the top of the page for website navigation, and a TOC (table 
   ```
 
 3. Modify the `nav` file to fit your website structure.  
-   The code in the `nav` file is a Bootstrape navbar.
+   The code in the `nav` file is a Bootstrap navbar.
   
-4. Assume the file to convert is `input.md`, then the command will looks like
+4. Assume the file to convert is `input.md`, then the command will look like
+  ```sh
+  pandoc input.md --template toc-sidebar.html -B nav -o outWithoutTOC.html
+  ```
+  If you want to add TOC, then the command will look like
   ```sh
   pandoc input.md --template toc-sidebar.html --toc -B nav -o outWithTOC.html
   ```
-  If you want to add TOC, then the command will looks like
-  ```sh
-  pandoc input.md --template toc-sidebar.html --toc -B nav -o outWithoutTOC.html
-  ```
-  If you want to use local css and javascript files, just replace `toc-sidebar.html` with `toc-sidebarL.html` in the previous commands.  
-  If you do not want a navbar, you can remove `-B nav` option. However, for the time being, this will result in a not good looking layout :(
+  
+### Options
+#### Local css and JavaScript files
+For local css and JavaScript files, just replace `toc-sidebar.html` with `toc-sidebarL.html` in step 4.  
+
+#### `<table>` styles
+The `<table>` styles here are the following Bootstrap table classes: `.table`, `table-bordered` and `table-hover`.
+You can change the styles by modifying line 104 in `toc-sidebar.html` (or `toc-sidebarL.html` if local css and js files are used).
+For example, if you want `.table-striped`, just replace `table table-bordered table-hover` into `table table-striped`.
+Read [Bootstrap documentation](http://getbootstrap.com/css/#tables) for more Bootstrap table styles.
+
+#### No navbar
+If you do not want a navbar, you can remove `-B nav` option in step 4. However, for the time being, this will result in a not good looking layout :(   
 
 ## Output examples
-### A Single page
+### A single page
 The following output examples are converted from [Pandoc's README file](https://github.com/jgm/pandoc/blob/master/README) and is using `toc-sidebarL.html` template
 * with TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithTOC.html>
 * without TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithoutTOC.html>
