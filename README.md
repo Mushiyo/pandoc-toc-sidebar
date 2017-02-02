@@ -46,4 +46,4 @@ The following output examples are converted from [Pandoc's README file](https://
 * without TOC: <https://mushiyo.github.io/pandoc-toc-sidebar/outWithoutTOC.html>
 
 ### A website
-[My notes](http://twilightzone.gitlab.io/), the contents are mostly written in Chinese, you can find the markdown source files [here](https://github.com/Mushiyo/note).
+[My notes](http://twilightzone.gitlab.io/note), the contents are mostly written in Chinese, you can find the markdown source files [here](https://github.com/Mushiyo/note).
