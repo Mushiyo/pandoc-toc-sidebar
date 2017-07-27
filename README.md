@@ -27,8 +27,8 @@ It has a navbar on the top of the page for website navigation, and a TOC (table 
   ```
   
 ### Options
-#### Local css and JavaScript files
-For local css and JavaScript files, just replace `toc-sidebar.html` with `toc-sidebarL.html` in step 4.  
+#### Local or self-contained css and JavaScript files
+For local css and JavaScript files, or using Pandoc's `--self-contained` option, replace `toc-sidebar.html` with `toc-sidebarL.html` in step 4.  
 
 #### `<table>` styles
 The `<table>` styles here are the following Bootstrap table classes: `.table`, `table-bordered` and `table-hover`.
